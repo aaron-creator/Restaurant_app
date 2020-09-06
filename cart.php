@@ -52,8 +52,35 @@
   </header>
 </div>
 <!--/header-->
+<div class="order-details">
+<br>
+<div class="row">
 
+            <div class="col col-12 col-sm-3">
+            </div>
 
+            <div class="col col-12 col-sm-6">
+                <form action="" method="POST">
+                    <table class="table table-borderless table-striped">
+                        <tr>
+                            <td>Table No</td>
+                            <td><input type="number" class="form-control" name="table-no"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td>
+                                <center> <input type="submit" value="View Cart" class="btn btn-success" name="submit"> </center>
+                            </td>  
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="col col-12 col-sm-3">
+            </div>
+
+</div>
 <!-- footers 20 -->
 <section class="w3l-footers-20">
 <div class="footers20">
@@ -88,21 +115,33 @@
 
 </html>
 <?php
+
 if(isset($_POST["submit"]))
 {
-    $name=$_POST["name"];
-     $sql = "SELECT `id`, `name`, `address`, `mobile`, `email`, `place`, `username`, `password` FROM `addfisherman` WHERE `username`='$name' ";
+    
+    $servername="localhost";
+    $dbusername="root";
+    $dbpassword="";
+    $dbname="restaurant";
+    $connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
+    $sql = "SELECT `table_no`, `item_name`, `price`, `unit` FROM `cart` WHERE 1";
     $result = $connection->query($sql);
     
     if ($result->num_rows > 0) {
       // output data of each row
       while($row = $result->fetch_assoc()) {
 
-         $_SESSION["id"]= $row["id"];
-
-       header('Location:map.php');
-      }
-    } else {
+        $total=$item_price*$item_units;
+        echo "<table class: 'table'>
+        <tr><td>Table No :</td> <td>$table_no</td></tr>
+        <tr><td>Item Name :</td> <td>$item_name</td></tr>
+        <tr><td>Item Price :</td> <td>$item_price</td></tr>
+        <tr><td>Item Units :</td> <td>$item_units</td></tr>
+        <tr><td>Total Price :</td> <td>$total</td></tr>";
+        } 
+    }
+    else 
+    {
       echo "0 results";
     }
 }
