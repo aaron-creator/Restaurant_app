@@ -53,7 +53,7 @@
                         </tr>
                         
                         <tr>
-                            <td></td>
+                            <td><center> <a href="services.php" class="btn btn-success">Go Back</a></center></td>
                             <td>
                                 <center> <input type="submit" value="Place Order" class="btn btn-success" name="submit"> </center>
                             </td>  
@@ -68,7 +68,7 @@
 
 </html>
 <?php
-
+session_start();
 if(isset($_POST["submit"])) {
 
     $table_no=$_POST["table-no"];
@@ -86,6 +86,7 @@ if(isset($_POST["submit"])) {
     if($result===TRUE)
     {
         $total=$item_price*$item_units;
+        header('location:cart.php');
         echo "<table class: 'table'>
         <tr><td>Table No :</td> <td>$table_no</td></tr>
         <tr><td>Item Name :</td> <td>$item_name</td></tr>

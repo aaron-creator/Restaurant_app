@@ -60,7 +60,7 @@
             </div>
 
             <div class="col col-12 col-sm-6">
-                <form action="" method="POST">
+                <form method="POST">
                     <table class="table table-borderless table-striped">
                         <tr>
                             <td>Table No</td>
@@ -75,74 +75,58 @@
                         </tr>
                     </table>
                 </form>
+
             </div>
 
             <div class="col col-12 col-sm-3">
             </div>
+</div>
 
-</div>
-<!-- footers 20 -->
-<section class="w3l-footers-20">
-<div class="footers20">
-    <div class="container">
-        <div class="footers20-content">
-            <div class="d-grid grid-col-4 grids-content">
-                <div class="column">
-                    <h4>Opening hours</h4>
-                    <p>Monday - Friday</p>
-                    <p class="mt-2">09:00 am to 10:00 pm</p>
-                </div>
-                
-            </div>
-            <div class="d-grid grid-col-3 grids-content1 bottom-border">
-                <div class="columns copyright-grid">
-                    <p class="copy-footer-29">© 2020 Pizza Pan. All rights reserved </p>
-                </div>
-                <div class="columns text-right social-grid">
-                    <ul class="social">
-                        <li><a href="#url"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                        <li><a href="#url"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-                        <li><a href="#url"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</section>
 
 </body>
 
 </html>
-<?php
 
+
+                
+<?php
 if(isset($_POST["submit"]))
-{
-    
+{   
+    $tableno=$_POST["table-no"];
     $servername="localhost";
     $dbusername="root";
     $dbpassword="";
     $dbname="restaurant";
     $connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
-    $sql = "SELECT `table_no`, `item_name`, `price`, `unit` FROM `cart` WHERE 1";
+    $sql = "SELECT `id`, `table_no`, `item_name`, `price`, `unit` FROM `cart` WHERE `table_no`= '$tableno' ";
     $result = $connection->query($sql);
     
-    if ($result->num_rows > 0) {
-      // output data of each row
-      while($row = $result->fetch_assoc()) {
-
-        $total=$item_price*$item_units;
+    if($result->num_rows > 0) {
+    // output data of each row
+        echo "Cart items Remaining";
         echo "<table class: 'table'>
-        <tr><td>Table No :</td> <td>$table_no</td></tr>
-        <tr><td>Item Name :</td> <td>$item_name</td></tr>
-        <tr><td>Item Price :</td> <td>$item_price</td></tr>
-        <tr><td>Item Units :</td> <td>$item_units</td></tr>
-        <tr><td>Total Price :</td> <td>$total</td></tr>";
-        } 
-    }
-    else 
+            <br>";
+        while($row = $result->fetch_assoc()) {
+
+            $table_no= $row["table_no"];
+            $item_name= $row["item_name"];
+            $item_price= $row["price"];
+            $item_units= $row["unit"];
+            $total=$item_price*$item_units;
+            echo "<table class: 'table'>
+            <br>
+            <tr><td>Table No :</td> <td>$table_no</td></tr>
+            <tr><td>Item Name :</td> <td>$item_name</td></tr>
+            <tr><td>Item Price :</td> <td>$item_price</td></tr>
+            <tr><td>Item Units :</td> <td>$item_units</td></tr>
+            <tr><td>Total Price :</td> <td>$total</td></tr>";
+
+        }
+        
+    } 
+    else
     {
-      echo "0 results";
+    echo "0 results";
     }
 }
 ?>

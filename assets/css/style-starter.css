@@ -87,6 +87,11 @@ body {
   outline: 0 !important;
 }
 
+.cart-items {
+  width: 100%;
+  height: auto;
+}
+
 hr {
   box-sizing: content-box;
   height: 0;
