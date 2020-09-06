@@ -85,9 +85,13 @@ if(isset($_POST["submit"])) {
     $result= $connection->query($sql);
     if($result===TRUE)
     {
-        echo "SUCCESS";
         $total=$item_price*$item_units;
-        echo "Total :",$total;
+        echo "<table class: 'table'>
+        <tr><td>Table No :</td> <td>$table_no</td></tr>
+        <tr><td>Item Name :</td> <td>$item_name</td></tr>
+        <tr><td>Item Price :</td> <td>$item_price</td></tr>
+        <tr><td>Item Units :</td> <td>$item_units</td></tr>
+        <tr><td>Total Price :</td> <td>$total</td></tr>";
     }
     else
     {
