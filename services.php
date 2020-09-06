@@ -190,20 +190,23 @@
 					<div class="col-lg-6 menu-section pr-lg-5">
 						<h3 class="menu-section-title">Pizzas</h3>
 						<!-- Item starts -->
-						<div class="menu-item">
-							<div class="row border-dot no-gutters">
-								<div class="col-8 menu-item-name">
-									<h6>Smoked Brisket Sandwich</h6>
+						<form method="post">
+							<div class="menu-item">
+								<div class="row border-dot no-gutters">
+									<div class="col-8 menu-item-name">
+										<input type="hidden" name="item-name"/>
+										<h6>Smoked Brisket Sandwich</h6>
+									</div>
+									<div class="col-4 menu-item-price text-right">
+										<h6>$19</h6>
+									</div>
 								</div>
-								<div class="col-4 menu-item-price text-right">
-									<h6>$19</h6>
+								<div class="menu-item-description">
+									<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
+									<input type="submit" name="submit" value="Add to cart" class="btn-style btn-primary btn mt-4" />
 								</div>
 							</div>
-							<div class="menu-item-description">
-								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-							</div>
-						</div>
+						</form>	
 						<!-- Item ends -->
 						<!-- Item starts -->
 						<div class="menu-item">
@@ -684,6 +687,25 @@ $(document).on("ready", function () {
 </body>
 
 </html>
-  <?php
+<!---backend codes->
+<?php
+if(null($_POST("submit"))){
+	$servername="localhost";
+	$dbusername="root";
+	$dbpassword="";
+	$dbname="";
+	$connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
+	$sql="INSERT INTO `addfisherman`( `name`, `address`, `mobile`, `email`, `place`, `username`, `password`) VALUES ('$name','$addr','$mob','$email','$place','$username','$password')";
+	$result= $connection->query($sql);
+	if($result===TRUE)
+	{
+		echo "SUCCESS";
+	}
+	else
+	{
+		echo "Error",$connection->error;
+	}
+	
+}
 
-  ?>
+?>
