@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -194,7 +195,9 @@
 							<div class="menu-item">
 								<div class="row border-dot no-gutters">
 									<div class="col-8 menu-item-name">
-										<input type="hidden" name="item-name"/>
+										<input type="hidden" name="table-no"/>
+										<input type="hidden" name="item-name" value="Smoked Brisket Sandwich" />
+										<input type="hidden" name="item-price" value="19" />
 										<h6>Smoked Brisket Sandwich</h6>
 									</div>
 									<div class="col-4 menu-item-price text-right">
@@ -204,6 +207,7 @@
 								<div class="menu-item-description">
 									<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
 									<input type="submit" name="submit" value="Add to cart" class="btn-style btn-primary btn mt-4" />
+									<input class="col-sm-2" style="margin: 30px 20px; position :absolute;" type="number" name="units">
 								</div>
 							</div>
 						</form>	
@@ -689,23 +693,29 @@ $(document).on("ready", function () {
 </html>
 <!---backend codes->
 <?php
-if(null($_POST("submit"))){
-	$servername="localhost";
-	$dbusername="root";
-	$dbpassword="";
-	$dbname="";
-	$connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
-	$sql="INSERT INTO `addfisherman`( `name`, `address`, `mobile`, `email`, `place`, `username`, `password`) VALUES ('$name','$addr','$mob','$email','$place','$username','$password')";
-	$result= $connection->query($sql);
-	if($result===TRUE)
-	{
-		echo "SUCCESS";
-	}
-	else
-	{
-		echo "Error",$connection->error;
-	}
-	
+if(isset($_POST["submit"])){
+
+	$table_no=$_POST["table-no"];
+	$item_name=$_POST["item-name"];
+	$item_price=$_POST["item-price"];
+	$item_units=$_POST["units"];
+
+$servername="localhost";
+$dbusername="root";
+$dbpassword="";
+$dbname="";
+$connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
+$sql="INSERT INTO `cart`( `table_no`, `item_name`, `price`, `unit`) VALUES (`$table_no`,`$item_name`,`$item_price`,`$item_units`)";
+$result= $connection->query($sql);
+if($result===TRUE)
+{
+	echo "SUCCESS";
+}
+else
+{
+	echo "Error",$connection->error;
+}
+
 }
 
 ?>
