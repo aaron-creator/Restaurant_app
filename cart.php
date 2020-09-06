@@ -84,9 +84,26 @@
 </div>
 </section>
 
-
-
-
 </body>
 
 </html>
+<?php
+if(isset($_POST["submit"]))
+{
+    $name=$_POST["name"];
+     $sql = "SELECT `id`, `name`, `address`, `mobile`, `email`, `place`, `username`, `password` FROM `addfisherman` WHERE `username`='$name' ";
+    $result = $connection->query($sql);
+    
+    if ($result->num_rows > 0) {
+      // output data of each row
+      while($row = $result->fetch_assoc()) {
+
+         $_SESSION["id"]= $row["id"];
+
+       header('Location:map.php');
+      }
+    } else {
+      echo "0 results";
+    }
+}
+?>
