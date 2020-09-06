@@ -123,8 +123,8 @@
                                 <h4 class="name-pos"><a href="#url">Margherita</a></h4>
                                 <p>Tomato sauce, mozzarella, & oregano</p>
                                 <h5>20$</h5>
-                                <a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-                                <a href="#url"><img src="assets/images/p1.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
+                                <a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+                                <a href="orderform.php"><img src="assets/images/p1.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
                     </div>
@@ -134,8 +134,8 @@
                                 <h4 class="name-pos"><a href="#url">Carbonara</a></h4>
                                 <p>Tomato sauce, eggs, and bacon</p>
                                 <h5>20$</h5>
-                                <a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-                                <a href="#url"><img src="assets/images/p2.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
+                                <a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+                                <a href="orderform.php"><img src="assets/images/p2.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
                     </div>
@@ -145,8 +145,8 @@
                                 <h4 class="name-pos"><a href="#url">Schiacciata</a></h4>
                                 <p> Olive oil, ham and rosemary</p>
                                 <h5>20$</h5>
-                                <a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-                                <a href="#url"><img src="assets/images/p3.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
+                                <a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+                                <a href="orderform.php"><img src="assets/images/p3.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
                     </div>
@@ -156,8 +156,8 @@
                                 <h4 class="name-pos"><a href="#url">Prosciutto e Funghi</a></h4>
                                 <p>Tomato sauce, ham, and mushrooms</p>
                                 <h5>20$</h5>
-                                <a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-                                <a href="#url"><img src="assets/images/p4.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
+                                <a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+                                <a href="orderform.php"><img src="assets/images/p4.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
                     </div>
@@ -167,8 +167,8 @@
                                 <h4 class="name-pos"><a href="#url">Mediterranea</a></h4>
                                 <p>Tomato sauce, cherry tomatoes and pepper</p>
                                 <h5>20$</h5>
-                                <a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
-                                <a href="#url"><img src="assets/images/p5.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
+                                <a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+                                <a href="orderform.php"><img src="assets/images/p5.jpg" alt="" class="img-fluid radius-image mt-4"/></a>
                             </div>
                         </div>
                     </div>
@@ -195,9 +195,6 @@
 							<div class="menu-item">
 								<div class="row border-dot no-gutters">
 									<div class="col-8 menu-item-name">
-										<input type="hidden" name="table-no"/>
-										<input type="hidden" name="item-name" value="Smoked Brisket Sandwich" />
-										<input type="hidden" name="item-price" value="19" />
 										<h6>Smoked Brisket Sandwich</h6>
 									</div>
 									<div class="col-4 menu-item-price text-right">
@@ -206,8 +203,7 @@
 								</div>
 								<div class="menu-item-description">
 									<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-									<input type="submit" name="submit" value="Add to cart" class="btn-style btn-primary btn mt-4" />
-									<input class="col-sm-2" style="margin: 30px 20px; position :absolute;" type="number" name="units">
+									<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 								</div>
 							</div>
 						</form>	
@@ -224,7 +220,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -240,7 +236,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -256,7 +252,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -278,7 +274,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -294,7 +290,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -310,7 +306,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -326,7 +322,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -348,7 +344,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -364,7 +360,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -380,7 +376,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -396,7 +392,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -418,7 +414,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -434,7 +430,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -450,7 +446,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->
@@ -466,7 +462,7 @@
 							</div>
 							<div class="menu-item-description">
 								<p>Pulled Pork, Beer Braised Brisket, & Quarter Rack of Ribs served with your choice of side</p>
-								<a href="#url" class="btn-style btn-primary btn mt-4">Add to Cart</a>
+								<a href="orderform.php" class="btn-style btn-primary btn mt-4">Add to Cart</a>
 							</div>
 						</div>
 						<!-- Item ends -->

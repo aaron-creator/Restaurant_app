@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -92,6 +92,7 @@ if(isset($_POST["submit"])) {
         <tr><td>Item Price :</td> <td>$item_price</td></tr>
         <tr><td>Item Units :</td> <td>$item_units</td></tr>
         <tr><td>Total Price :</td> <td>$total</td></tr>";
+
     }
     else
     {
