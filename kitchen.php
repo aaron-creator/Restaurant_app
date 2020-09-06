@@ -38,11 +38,8 @@
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item @@services-active">
-              <a class="nav-link effect-3" href="services.php">Menu<span class="sr-only">(current)</span></a>
-            </li>
             <li class="px-4 fill-none">
-              <a href="cart.php" class="btn btn-style btn-secondary">Cart <span class="fa fa-shopping-cart mr-2"></span></a>
+              <a href="kitchen.php" class="btn btn-style btn-secondary">Cart <span class="fa fa-shopping-cart mr-2"></span></a>
               </li>
 		  </ul>
 		  
