@@ -1,23 +1,15 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Pizza Restaurant</title>
-
-  <!-- Web-Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
-  <!-- //Web-Fonts -->
-
-  <!-- Template CSS -->
-  <link rel="stylesheet" href="assets/css/style-starter.css">
+    <title>Pizza Restaurant</title>
+      <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
 <body>
-<!--header-->
+
 <div class="w3l-top-header">
   <header id="site-header" class="fixed-top">
     <div class="container">
@@ -25,10 +17,7 @@
         <a class="navbar-brand" href="index.php">
           <span class="fa fa-pie-chart"></span> Pizza pan
         </a>
-        <!-- if logo is image enable this   
-      <a class="navbar-brand" href="#index.html">
-          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-      </a> -->
+       
         <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
@@ -52,9 +41,7 @@
     </div>
   </header>
 </div>
-<!--/header-->
 
-<!--sections-->
 <section class="w3l-banner" id="banner">
     <div class="new-block py-5">
         <div class="container">
@@ -75,7 +62,7 @@
             </div>
         </div>
 </section>
-<!-- iphone home block -->
+
 <section class="w3l-about py-5">
     <div class="container py-lg-5 py-md-4">
         <div class="row">
@@ -112,7 +99,7 @@
         </div>
     </div>
 </section>
-<!-- //iphone home block -->
+
 <section class="w3l-portfolio-8 py-5">
     <div class="portfolio-main py-lg-5 py-md-4">
         <div class="container">
@@ -170,9 +157,7 @@
     </div>
 </section>
 
-
-  <!-- footers 20 -->
-  <section class="w3l-footers-20">
+<section class="w3l-footers-20">
     <div class="footers20">
         <div class="container">
             <div class="footers20-content">
@@ -200,12 +185,11 @@
         </div>
     </div>
 </section>
-  <!-- move top -->
+  
   <button onclick="topFunction()" id="movetop" title="Go to top">
   	&#10548;
   </button>
   <script>
-  	// When the user scrolls down 20px from the top of the document, show the button
   	window.onscroll = function () {
   		scrollFunction()
   	};
@@ -218,13 +202,12 @@
   		}
   	}
 
-  	// When the user clicks on the button, scroll to the top of the document
   	function topFunction() {
   		document.body.scrollTop = 0;
   		document.documentElement.scrollTop = 0;
   	}
   </script>
-  <!-- /move top -->
+  
   </section>
 
   <!-- jQuery and Bootstrap JS -->
@@ -273,7 +256,6 @@
   	});
   </script>
 
-  <!-- testimonials owlcarousel -->
   <script src="assets/js/owl.carousel.js"></script>
   <script>
   	$(document).ready(function () {
@@ -307,7 +289,6 @@
   		})
   	})
   </script>
-  <!-- //script for Testimonials-->
 
   <!-- script for food-->
   <script>
@@ -341,9 +322,7 @@
   		})
   	})
   </script>
-  <!-- //script for food-->
-
-  <!-- disable body scroll which navbar is in active -->
+ 
   <script>
   	$(function () {
   		$('.navbar-toggler').click(function () {
@@ -351,8 +330,7 @@
   		})
   	});
   </script>
-  <!-- disable body scroll which navbar is in active -->
-  <!--/MENU-JS-->
+  
   <script>
   	$(window).on("scroll", function () {
   		var scroll = $(window).scrollTop();
@@ -364,7 +342,6 @@
   		}
   	});
 
-  	//Main navigation Active Class Add Remove
   	$(".navbar-toggler").on("click", function () {
   		$("header").toggleClass("active");
   	});
@@ -379,7 +356,7 @@
   		});
   	});
   </script>
-  <!--//MENU-JS-->
+ 
   <script src="assets/js/bootstrap.min.js"></script>
 
   </body>
