@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Pizza Restaurant</title>
       <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="assets/css/style-starter.css">
+      <link rel="stylesheet" href="assets/css/style-starter.css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
  </head>
 
  <body>
