@@ -55,7 +55,7 @@ $dbpassword="";
 $dbname="restaurant";
 $connection = new mysqli($servername,$dbusername,$dbpassword,$dbname);
 if(isset($_POST["submit"])){
-    $sql = "DELETE FROM `cart` WHERE `id`=id ";
+    $sql = "DELETE FROM `cart` WHERE `id`=$_POST[id] ";
     $connection->query($sql);
 }
     
@@ -74,14 +74,18 @@ if(isset($_POST["submit"])){
             $item_price= $row["price"];
             $item_units= $row["unit"];
             $total=$item_price*$item_units;
-            echo "<table class: 'table'>
-            <br>
-            <tr><td>Table No :</td> <td>$table_no</td></tr>
-            <tr><td>Item Name :</td> <td>$item_name</td></tr>
-            <tr><td>Item Price :</td> <td>$item_price</td></tr>
-            <tr><td>Item Units :</td> <td>$item_units</td></tr>
-            <tr><td>Total Price :</td> <td>$total</td></tr>
-            <tr><td>Order Status:</td> <td><input type='submit' value='Completed' class='btn btn-success' name='submit'></td></tr>";
+            echo "
+            <form method='post'>
+              <table class: 'table'>
+              <br>
+              <input type='hidden' name='id' value='$id'/>
+              <tr><td>Table No :</td> <td>$table_no</td></tr>
+              <tr><td>Item Name :</td> <td>$item_name</td></tr>
+              <tr><td>Item Price :</td> <td>$item_price</td></tr>
+              <tr><td>Item Units :</td> <td>$item_units</td></tr>
+              <tr><td>Total Price :</td> <td>$total</td></tr>
+              <tr><td>Order Status:</td> <td><input type='submit' value='Completed' class='btn btn-success' name='submit'></td></tr>
+            </form>";
 
         }
         
