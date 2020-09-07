@@ -41,44 +41,39 @@
     </div>
   </header>
 </div>
-<!--/header-->
+
 <div class="order-details">
 <br>
-<div class="row">
+<div class="container">
+  <div class="row">
+      <div class="col col-12 col-sm-3">
+      </div>
 
-            <div class="col col-12 col-sm-3">
-            </div>
+        <div class="col col-12 col-sm-6">
+          <form method="POST">
+              <table class="table table-borderless table-striped">
+                  <tr>
+                      <td>Table No</td>
+                      <td><input type="number" class="form-control" name="table-no"></td>
+                  </tr>
+                  
+                  <tr>
+                      <td></td>
+                      <td>
+                          <center> <input type="submit" value="View Cart" class="btn btn-success" name="submit"> </center>
+                      </td>  
+                  </tr>
+              </table>
+          </form>
+        </div>
 
-            <div class="col col-12 col-sm-6">
-                <form method="POST">
-                    <table class="table table-borderless table-striped">
-                        <tr>
-                            <td>Table No</td>
-                            <td><input type="number" class="form-control" name="table-no"></td>
-                        </tr>
-                        
-                        <tr>
-                            <td></td>
-                            <td>
-                                <center> <input type="submit" value="View Cart" class="btn btn-success" name="submit"> </center>
-                            </td>  
-                        </tr>
-                    </table>
-                </form>
+      <div class="col col-12 col-sm-3">
+      </div>
 
-            </div>
-
-            <div class="col col-12 col-sm-3">
-            </div>
-</div>
-
-
-</body>
-
-</html>
-
-
-                
+   </div>
+   <div class="col col-12 col-sm-6">
+       
+                   
 <?php
 if(isset($_POST["submit"]))
 {   
@@ -120,3 +115,11 @@ if(isset($_POST["submit"]))
     }
 }
 ?>
+   </div>
+</div>
+</body>
+
+</html>
+
+
+ 
