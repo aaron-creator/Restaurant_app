@@ -2,23 +2,16 @@
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <title>Pizza Restaurant</title>
-
-  <!-- Web-Fonts -->
   <link href="//fonts.googleapis.com/css?family=Spartan:400,500,600,700,900&display=swap" rel="stylesheet">
-  <!-- //Web-Fonts -->
-
-  <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<!--header-->
+
 <div class="w3l-top-header">
   <header id="site-header" class="fixed-top">
     <div class="container">
@@ -26,10 +19,6 @@
         <a class="navbar-brand" href="index.php">
           <span class="fa fa-pie-chart"></span> Pizza pan
         </a>
-        <!-- if logo is image enable this   
-      <a class="navbar-brand" href="#index.html">
-          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-      </a> -->
         <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
